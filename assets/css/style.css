@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.navbar {
+    margin-bottom: 44px;
+    margin-top: 35px;
+}
+
+.nav-text {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 28px;
+    color: #222831;
+}
+
+.button-call {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    background: #7F56D9;
+    border-radius: 10px;
+    padding: 12px 24px;
+    border: none;
+}
+
+.flag {
+    border-radius: 3px;
+}
+
+.dropdown-toggle {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 28px;
+    color: #222831;
+}
+
+.buttons {
+    display: flex;
+    /* position: relative; */
+}
+
+.ellipse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: rgba(127, 86, 217, 0.5);
+    backdrop-filter: blur(8px);
+    border-radius: 50%;
+}
+
+.ellipse span {
+    width: 26px;
+}
+
+.carousel-control-play,
+.carousel-control-stop {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
+    border: none;
+    left: 50%;
+    color: #FFFFFF;
+    top: 40%;
+    background: rgba(127, 86, 217, 0.5);
+    backdrop-filter: blur(23px);
+}
+
+.carousel-control-play i,
+.carousel-control-stop i {
+    font-size: 30px;
+}
+.carousel-control-stop{
+    display: none;
+}
