@@ -60,6 +60,14 @@
             background: rgba(127, 86, 217, 0.5);
             backdrop-filter: blur(8px);
             border-radius: 50%;
+            position: absolute;
+            z-index: 1000;
+            top: 45%;
+            right: 250px;
+        }
+        
+        .ellipse:nth-child(2) {
+            left: 250px;
         }
         
         .ellipse span {
@@ -183,4 +191,42 @@
         
         .flag {
             margin-right: 6px;
+        }
+        
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+        
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .buttons-play-center {
+            position: absolute;
+            z-index: 1000;
+            top: 35%;
+            left: 45%;
         }

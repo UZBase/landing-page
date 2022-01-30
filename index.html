@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>3D printer</title>
     <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- Link Swiper's CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&family=Lato:wght@400;700&family=Lora:wght@700&display=swap" rel="stylesheet" />
@@ -59,44 +61,35 @@
                 </div>
             </div>
         </nav>
-
-        <div id="carouselExampleControlsNoTouchingAll" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
                     <img src="./assets/images/header.png" class="d-block w-100" alt="..." />
                 </div>
-                <div class="carousel-item">
+                <div class="swiper-slide">
                     <img src="./assets/images/header.png" class="d-block w-100" alt="..." />
                 </div>
-                <div class="carousel-item">
+                <div class="swiper-slide">
                     <img src="./assets/images/header.png" class="d-block w-100" alt="..." />
                 </div>
             </div>
-            <div class="buttons">
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
-            <div class="ellipse">
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-            </div>
-            <span class="visually-hidden">Previous</span>
-          </button>
-                <button class="carousel-control-play">
-            <i class="fas fa-play"></i>
-          </button>
-                <button class="carousel-control-stop">
-            <i class="fas fa-pause"></i>
-          </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
-            <div class="ellipse">
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-            </div>
-            <span class="visually-hidden">Next</span>
-          </button>
+            <div class="container">
+                <div class="buttons">
+                    <div class="ellipse">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </div>
+                    <div class="ellipse">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </div>
+                    <div class="buttons-play-center">
+                        <button class="carousel-control-play">
+                <i class="fas fa-play"></i>
+              </button>
+                        <button class="carousel-control-stop">
+                <i class="fas fa-pause"></i>
+              </button>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -138,11 +131,9 @@
                                     </div>
                                     <div class="social_icon">
                                         <i class="fab fa-youtube"></i>
-
                                     </div>
                                     <div class="social_icon">
                                         <i class="fab fa-telegram"></i>
-
                                     </div>
                                 </div>
                             </div>
@@ -152,9 +143,14 @@
             </div>
         </div>
     </section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- swiperjs connected -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- jquery connected -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- bootstrap connected -->
     <script src="./assets/js/script.js"></script>
+    <!-- script connected -->
 </body>
 
 </html>
