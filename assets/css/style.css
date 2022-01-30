@@ -230,3 +230,106 @@
             top: 35%;
             left: 45%;
         }
+
+
+        .preim_rabota{
+          margin-top: 155px;
+          margin-bottom: 134px;
+          position: relative;
+       
+        }
+        .preim_rabota .preim_rabota_text h3{
+          font-family: Lora;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 51px;
+        color: #10375C;
+        margin-bottom: 80px;
+        }
+        .preim_rabota .preim_rabota_carts .preim_rabota_cart{
+          width: 435px !important;
+        height: 262px !important;
+        background: #F9F7FF;
+        border-radius: 6px;
+        padding: 70px 48px 64px 40px;
+        transition: 500ms;
+        display: flex;
+        flex-wrap: wrap;
+        
+
+        }
+        .preim_rabota .preim_rabota_carts .preim_rabota_cart i{
+          font-size: 40px;
+          color: #7F56D9;
+          transform: rotate(90deg);
+          margin-bottom: 29px;
+           transition: 500ms;
+           font-weight: 100;
+        
+        }
+
+        .preim_rabota .preim_rabota_carts .preim_rabota_cart:hover{
+          background-color: #7F56D9;
+        } 
+        .preim_rabota_cart_icon{
+          display: block  !important;
+          width: 100%;
+          text-align: start;
+        }
+        .preim_rabota .preim_rabota_carts .preim_rabota_cart h4{
+          font-family: Inter;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 29px;
+          color: #7F56D9;
+           transition: 500ms;
+           text-align: start;
+          
+        }
+        .preim_rabota .preim_rabota_carts .preim_rabota_cart:hover.preim_rabota_cart h4,
+        .preim_rabota .preim_rabota_carts .preim_rabota_cart:hover.preim_rabota_cart i{
+          color: #ffffff;
+        }
+
+        /*================================ swiper =============*/
+       
+        /* .swiper{
+          overflow: unset !important;
+        } */
+
+        /* .swiper-wrapper{
+          overflow: hidden !important;
+        } */
+
+        .swiper-button-prev:after,
+        .swiper-button-next:after{
+       display: none;
+        }
+        .swiper-button-prev i,
+        .swiper-button-next i{
+          font-size: 16px !important;
+          padding: 17px 20px;
+          border-radius: 50%;
+          background-color: #7F56D9;
+          color: #ffffff;
+         
+        }
+        .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled{
+          opacity: 1;
+        }
+        .swiper-wrapper {
+          position: unset !important;
+        }
+
+        .swiper-button-prev{
+          position: absolute;
+          top: 30px;
+          left: 87%;
+        }
+        .swiper-button-next{
+          position: absolute;
+          top: 30px;
+          right: 165px;
+        }
