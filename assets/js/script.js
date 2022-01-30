@@ -29,7 +29,7 @@ $(".carousel-control-stop").click(function () {
 });
 // header slider end
 
-var swiper = new Swiper(".mySwiper1", {
+var swiper1 = new Swiper(".mySwiper1", {
   slidesPerView: 3,
   spaceBetween: 20,
   grabCursor: true,
@@ -43,5 +43,32 @@ var swiper = new Swiper(".mySwiper1", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+});
+
+
+
+var swiper2 = new Swiper(".mySwiper2", {
+  slidesPerView: 1,  
+  centeredSlides: false,
+  slidesPerGroupSkip: 1,
+  grabCursor: true,
+  loop: true,
+  keyboard: {
+    enabled: true,
+  },
+ 
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
+  
+  navigation: {
+    nextEl: ".mySwiper2_next",
+    prevEl: ".mySwiper2_prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    // clickable: true,
+    type: "progressbar",
   },
 });
