@@ -1,8 +1,10 @@
+// header slider start
 var swiper = new Swiper(".mySwiper", {
-  loop: true, 
-  autoplay: {
-    delay: 2500,
-  },
+  loop: true,
+  autoplay: true,
+  autoplayDisableOnInteraction: true,
+  disableOnInteraction: true,
+  speed: 400,
   navigation: {
     nextEl: ".carousel-control-next-icon",
     prevEl: ".carousel-control-prev-icon",
@@ -11,20 +13,21 @@ var swiper = new Swiper(".mySwiper", {
 const swiper_slide = document.querySelector('.swiper-slide');
 const carousel_control_play = document.querySelector('.carousel-control-play');
 const carousel_control_stop = document.querySelector('.carousel-control-stop');
+var mySwiper = document.querySelector('.swiper').swiper
 
-carousel_control_play.addEventListener('click', (e) => {
+$(".carousel-control-play").click(function () {
   carousel_control_play.style.display = "none"
   carousel_control_stop.style.display = "block"
-  swiper_slide.setAttribute("data-swiper-autoplay", "2500")
-  e.preventDefault()
-})
-carousel_control_stop.addEventListener('click', (e) => {
-  carousel_control_stop.style.display = "none"
+  mySwiper.autoplay.start();
+  console.log('slider started');
+});
+$(".carousel-control-stop").click(function () {
   carousel_control_play.style.display = "block"
-  swiper_slide.setAttribute("data-swiper-autoplay", "5000")
-  e.preventDefault()
-
-})
+  carousel_control_stop.style.display = "none"
+  mySwiper.autoplay.stop();
+  console.log('slider stopped');
+});
+// header slider end
 
 var swiper = new Swiper(".mySwiper1", {
   slidesPerView: 3,
