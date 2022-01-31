@@ -444,7 +444,9 @@
   margin-right: 15px;
   color: #222831;
 }
-.our-works-header .our-text .our-header-txt{display: flex;}
+.our-works-header .our-text .our-header-txt {
+  display: flex;
+}
 .our-works-header .our-text h2 {
   font-family: Lora;
   font-style: normal;
@@ -453,4 +455,25 @@
   line-height: 51px;
   color: #10375c;
   width: 533px;
+}
+
+.swiper-slide4 {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  height: calc((100% - 30px) / 2) !important;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
 }

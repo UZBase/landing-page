@@ -72,3 +72,16 @@ var swiper2 = new Swiper(".mySwiper2", {
     type: "progressbar",
   },
 });
+// slider number 4
+
+var swiper4 = new Swiper(".mySwiper4", {
+  slidesPerView: 3,
+  grid: {
+    rows: 2,
+  },
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination4",
+    clickable: true,
+  },
+});
