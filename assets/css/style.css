@@ -102,6 +102,10 @@
         margin-bottom: 160px;
     }
     
+    .left-content-about_us {
+        width: 100%;
+    }
+    
     .left-content-about_us img {
         margin: 8px;
         height: auto;
@@ -111,9 +115,14 @@
         display: flex;
     }
     
+    .top-left-content-about_us {
+        display: flex;
+        justify-content: center;
+    }
+    
     .top-left-content-about_us img:nth-child(1) {
         height: 160px;
-        margin-bottom: -70px;
+        margin-top: 88px;
     }
     
     .bottom-left-content-about_us img:nth-child(1),
@@ -130,6 +139,12 @@
         color: #10375c;
         margin: 0;
         margin-bottom: 24px;
+    }
+    
+    .bottom-left-content-about_us,
+    .top-left-content-about_us,
+    .right-paragraf-content-about_us {
+        width: 100%;
     }
     
     .right-content-about_us .right-paragraf-content-about_us p {
@@ -586,4 +601,45 @@
         margin-right: 24px;
         color: #98a2b3;
         font-size: 23px;
+    }
+    
+    @media ( max-width:320px) {
+        .about_us .left-content-about_us {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .bottom-left-content-about_us {
+            justify-content: center;
+        }
+        .navbar-light .navbar-toggler,
+        .navbar-light .navbar-toggler.active,
+        .navbar-toggler:focus {
+            border: none !important;
+            border-color: transparent;
+            box-shadow: none;
+        }
+        .button-call {
+            padding: 10px 15px;
+        }
+        .swiper-backface-hidden .swiper-slide {
+            height: 305px;
+        }
+        .carousel-control-play,
+        .carousel-control-stop {
+            width: 48px;
+            height: 47px;
+        }
+        .carousel-control-play i,
+        .carousel-control-stop i {
+            font-size: 12px;
+        }
+        .ellipse {
+            display: none;
+        }
+        .right-content-about_us {
+            text-align: center;
+        }
+        .right-content-about_us h3 {
+            font-size: 40px;
+        }
     }
