@@ -14,6 +14,7 @@ const swiper_slide = document.querySelector('.swiper-slide');
 const carousel_control_play = document.querySelector('.carousel-control-play');
 const carousel_control_stop = document.querySelector('.carousel-control-stop');
 var mySwiper = document.querySelector('.swiper').swiper
+mySwiper.autoplay.stop();
 
 $(".carousel-control-play").click(function () {
   carousel_control_play.style.display = "none"
